@@ -1,0 +1,487 @@
+/* Resets */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    overflow-x: hidden;
+}
+
+h1 {
+    font-size: 3.1rem;
+}
+
+h2 {
+    font-size: 2.1rem;
+}
+
+h3 {
+    font-size: 1.5rem;
+}
+
+p {
+    font-size: 1.1rem;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+a {
+    display: inline-block;
+    text-decoration: none;
+}
+
+
+/* Utility */
+
+.bold-text {
+    font-weight: 400;
+    font-size: 1.95rem;
+}
+
+.container {
+    max-width: 1280px;
+    margin-inline: auto;
+    padding-inline: 20px;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+}
+
+ul {
+    list-style: none;
+}
+
+.hover-link {
+    color: #fff;
+    background-color: #000;
+    transition: 0.5s ease-in-out;
+    border-radius: 8px;
+}
+
+.hover-link:hover {
+    background-color: #d7ae27;
+    color: #000;
+    border-radius: 18px;
+}
+
+
+/* Navbar */
+
+nav {
+    background: url(/images/banner.jpg);
+    min-height: 500px;
+    width: 100%;
+    position: relative;
+}
+
+.nav-content {
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 10px;
+}
+
+.nav-links {
+    gap: 45px;
+}
+
+.nav-links .link {
+    color: #fff;
+}
+
+.sign-in-button {
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 14px;
+}
+
+.sign-in-button:hover {
+    background-color: #d7ae27;
+    color: #fff;
+}
+
+
+/* Hero Section */
+
+.hero {
+    position: absolute;
+    top: 10%;
+    margin: 20px auto;
+    text-align: center;
+}
+
+.hero-content {
+    width: 80%;
+    text-align: center;
+    flex-direction: column;
+    gap: 20px;
+    color: #fff;
+}
+
+.hero-content span {
+    font-size: 2.9rem;
+    font-weight: 700;
+}
+
+.read-more {
+    background-color: #fff;
+    padding: 10px 35px;
+    border-radius: 8px;
+    color: #000;
+    transition: 0.5s ease-in;
+}
+
+.read-more:hover {
+    background-color: blue;
+    color: #fff;
+    border-radius: 18px;
+}
+
+.booking-content {
+    justify-content: center;
+}
+
+.booking-content form {
+    justify-content: space-around;
+    align-items: center;
+    border: 2px solid transparent;
+    padding: 10px;
+    position: absolute;
+    top: 68%;
+    width: 850px;
+    border-radius: 30px 30px 0 0;
+    background-color: #fff;
+}
+
+form input {
+    display: block;
+    margin-top: 10px;
+    padding: 5px 10px;
+    border-radius: 8px;
+}
+
+.book-now {
+    padding: 10px 30px;
+    border-radius: 8px;
+}
+
+
+/* Accommodation */
+
+.accommodation {
+    margin-top: 80px;
+}
+
+.accommodation-content {
+    gap: 100px;
+    transform: translateX(20%);
+}
+
+.accommodation-left {
+    flex-direction: column;
+    align-items: flex-start;
+    flex-basis: 20%;
+    width: 50%;
+    gap: 15px;
+}
+
+.accommodation-right {
+    flex-basis: 25%;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(2,180px);
+    grid-auto-rows: 220px;
+}
+
+.image {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.col-2 {
+    grid-column: span 2;
+}
+
+.see-more {
+    padding: 10px 20px;
+}
+
+.breakfast {
+    width: 80%;
+}
+
+.breakfast-image {
+    flex-basis: 40%;
+}
+
+.breakfast-container {
+    
+    margin-top: 50px;
+    transform: translateX(26%);
+}
+
+.breakfast-image img {
+    width: 380px;
+    margin-left: 20px;
+}
+
+.breakfast-content {
+    flex-direction: column;
+    align-items: flex-end;
+    flex-basis: 33%;
+    gap: 10px;
+    text-align: right;
+}
+
+.breakfast-btn {
+    padding: 10px 20px;
+}
+
+.about-hotel {
+    background-color: #353e43;
+    padding: 50px;
+    margin-top: 50px;
+}
+
+.about-hotel-container {
+    transform: translateX(21%);
+    gap: 60px;
+}
+
+.hotel-content {
+    flex-basis: 30%;
+    color: #fff;
+    flex-direction: column;
+    gap: 10px;
+    align-items: flex-start;
+}
+
+.about-hotel-container img {
+    width: 250px;
+    flex-basis: 25%;
+}
+
+.testimonial {
+    margin-top: 50px;
+    min-height: 500px;
+    position: relative;
+}
+
+.testimonial-container h2 {
+    text-align: center;
+}
+
+.testimonial-area {
+    margin-top: 60px;
+    gap: 10px;
+    justify-content: space-around;
+}
+
+.testimonial-card {
+    width: 45%;
+    background-color: orange;
+    padding: 50px;
+    position: relative;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.comma {
+    position: absolute;
+    top: 10%;
+    right: 10%;
+}
+
+.contact-us {
+    background-color: #242423;
+    min-height: 400px;
+    position: relative;
+    
+}
+
+.contact-us-container {
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.contact-left {
+    flex-basis: 35%;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-right: 50%;
+    padding-top: 50px;
+    gap: 20px;
+    color: #fff;
+}
+
+.contact-left span {
+    font-size: 2.0rem;
+    font-weight: 700;
+}
+
+.contact-right {
+    /* flex-basis: 20%; */
+    flex-direction: column;
+    gap: 10px;
+    padding: 20px 20px;
+    background-color: orangered;
+    border-radius: 8px;
+    margin-block: 20px;
+    width: 450px;
+    position: absolute;
+    right: 10%;
+}
+
+.contact-right input,textarea {
+    padding: 10px;
+    width: 100%;
+    border-radius: 9px;
+    border: transparent;
+}
+
+.send-btn {
+    padding: 10px 20px;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+}
+
+
+/* Make Responsive */
+
+@media screen and (max-width: 750px) {
+    .brand-logo img {
+        width: 80%;
+    }
+
+    .nav-content {
+        gap: 10px;
+    }
+
+    .nav-links {
+        gap: 15px;
+        text-align: center;
+    }
+
+    .hero {
+        width: 100%;
+    }
+
+    .hero-content h1 {
+        font-size: 2.2rem;
+    }
+
+    .hero-content span {
+        font-size: 1.6rem;
+    }
+
+    .booking-details {
+        width: 100%;
+    }
+
+    .booking-content form {
+        flex-direction: column;
+    }
+
+    .accommodation-content {
+        transform: translateY(30%);
+        flex-direction: column;
+        width: 100%; 
+    }
+
+    .accommodation-left {
+        width: 80%;
+        justify-content: center;
+    }
+
+    .breakfast-container {
+        transform: translateY(38%);
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .breakfast-content {
+        gap: 10px;
+    }
+
+    .breakfast-image img {
+        width: 100%;
+    }
+
+    .about-hotel {
+        margin-top: 300px;
+    }
+
+    .about-hotel-container {
+        flex-direction: column;
+        width: 100%;
+        transform: translateX(-2%);
+    }
+
+    .testimonial-area {
+        flex-direction: column;
+    }
+
+    .testimonial-card {
+        width: 100%;
+    }
+
+    .contact-us {
+        margin-top: 50px;
+        min-height: 100vh;
+        width: 100%;
+    }
+
+    .contact-us-container {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .contact-left,h2 {
+        margin: auto;
+        gap: 18px;
+        align-items: flex-start;
+        text-align: center;
+    }
+
+    .contact-right {
+        transform: translateY(100%);
+        width: 80%;
+        align-items: flex-end;
+    }
+
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
